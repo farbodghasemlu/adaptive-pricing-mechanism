@@ -66,11 +66,11 @@ $$
 $$
 
 $$
-\phi_t^{\mathrm{target}} = \operatorname{clip}\!\left(\phi_t^{\mathrm{raw}}, \phi_{\min}, \phi_{\max}\right)
+\phi_t^{\mathrm{target}} = \mathrm{clip}\left(\phi_t^{\mathrm{raw}}, \phi_{\min}, \phi_{\max}\right)
 $$
 
 $$
-\phi_{t+1} = \operatorname{clip}\!\left(\phi_t + \operatorname{clip}\!\left(\phi_t^{\mathrm{target}}-\phi_t,\; -\Delta_{\max},\; \Delta_{\max}\right),\; \phi_{\min},\; \phi_{\max}\right)
+\phi_{t+1} = \mathrm{clip}\left(\phi_t + \mathrm{clip}\left(\phi_t^{\mathrm{target}}-\phi_t,\; -\Delta_{\max},\; \Delta_{\max}\right),\; \phi_{\min},\; \phi_{\max}\right)
 $$
 
 Where:
